@@ -30,20 +30,7 @@
     // 2. pick the first value
     // 3. go through remaining array
     // 4. check if there is a value that will give me the answer
-  
-    let map = new Map();
-    let length = nums.length
-    
-    for(let i = 0; i < length; i ++) {
-        let pointer = map[nums[i]]
-        
-        if(pointer >= 0) {
-            return [pointer, i]
-        }
-        
-        map[target - nums[i]] = i
-    }
-    return []
+
 };
 
 /**
